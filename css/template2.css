@@ -370,7 +370,7 @@ left: 40px;
 .design{
   width: 100%;
   height:600px ;
-  background-image: url(/images/design-features.jpg);
+  background-image: url(../images/design-features.jpg);
   background-size: cover;
 }
 
@@ -623,7 +623,7 @@ left: 40px;
 .about .stats{
   width: 100%;
   height: 550px;
-  background: url(/images/stats.png);
+  background: url(../images/stats.png);
   background-size: cover;
   position: relative;
   display: flex;
@@ -825,7 +825,7 @@ left: 40px;
 .qoute{
   width: 100%;
   height: 300px;
-  background: url(/images/quote.jpg);
+  background: url(../images/quote.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -973,7 +973,7 @@ left: 40px;
   height: 350px;
   display: flex;
   align-items: center;
-  background: url(/images/subscribe.jpg);
+  background: url(../images/subscribe.jpg);
   background-size: cover;
   position: relative;
 }
@@ -1151,7 +1151,7 @@ left: 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(/images/subscribe.jpg);
+  background: url(../images/subscribe.jpg);
   background-size: cover;
   position: relative;
 }
