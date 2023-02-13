@@ -19,6 +19,9 @@ body{
     --secondery-color:#2C4755;
     --transparent-color:rgb(15,116,143,50%);
     --overlay-color: rgb(0, 0, 0, .7);
+    --facebook-color:#1877F2;
+    --youtube-color:red;
+    --twitter-color:#2AA9E0 ;
   }
 
   ul{
@@ -283,24 +286,18 @@ left: 40px;
 .services .services-content .col-content:hover{
   box-shadow: 0px 0px 20px #ddd;
 }
-@media(max-width:767px){
-  .services .services-content .col-content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .services .services-content .col-content i{
   color:#000 ;
   font-size: 40px;
   flex-basis: 60px;
 }
+
 .services .services-content .col-content .text{
-  flex: 1;
-  margin-left:30px ;
-  padding-right: 20px;
-  padding-bottom: 20px;
+   flex: 1;
+   margin-left:30px ; 
+   padding-right: 20px;
+   padding-bottom: 20px; 
 }
 
 .services .container .col-content .text h3{
@@ -314,6 +311,35 @@ left: 40px;
   line-height: 1.8;
 }
 
+@media(max-width:767px){
+  .services .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .services .services-content .col-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .services .services-content .col-content i{
+    max-width: 70%;
+    text-align: center;
+  }
+  .services .services-content .col-content .text {
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .services .container .col-content .text h3,  .services .container .col-content .text p{
+    text-align: center;
+    max-width: 70%;
+    margin-bottom:0
+  } */
+}
 .nice-footer{
   width: 100%;
   display: flex;
@@ -642,7 +668,7 @@ left: 40px;
   height: 100%;
   left: 0;
   bottom: 0;
-  background-color: rgb(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
 
 }
 .about .stats .container{ 
@@ -657,12 +683,12 @@ left: 40px;
   max-height:auto ;
   position: absolute;
 }
-@media(max-width:767px){
+/* @media(max-width:767px){
   .about .stats .container {
     grid-template-columns: repeat(auto-fill,minmax(420px, 1fr)) ;
     gap: 10px;
   }
-}
+} */
 .about .stats .container .col{
   color: #fff;
   display: flex;
@@ -999,7 +1025,6 @@ left: 40px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 500px;
   max-width: 100%;
   margin-top: 50px;
   position: relative;
@@ -1017,11 +1042,11 @@ left: 40px;
 }
 .subscribe form input[type="submit"]{
   width: 150px;
-  padding: 20px ;
+  padding: 15px ;
   border: 1px solid #fff;
   border-left: none;
   color: #fff;
-  text-transform: uppercase;
+  text-transform:uppercase;
   background-color: var(--main-color);
 }
 .subscribe form input[type="email"]:focus{
@@ -1044,6 +1069,26 @@ left: 40px;
   font-weight: 600;
   font-style: oblique;
   text-transform: capitalize;
+}
+@media(max-width:767px){
+  .subscribe .container{
+    padding: 0;
+  }
+  .subscribe form {
+    max-width:350px;
+  }
+  .subscribe form input[type="email"]{
+    width: 250px;
+  }
+  .subscribe form input[type="submit"]{
+    max-width: 100px;
+  }
+  .subscribe form i{
+
+  }
+  .subscribe p{
+    max-width: 70%;
+  }
 }
 .contact{
   padding-top:100px ;
